@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "Utility to generate readme files",
+  "main": "index.js",
+  "scripts": {
+    "test": "n/a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frye/readme-generator.git"
+  },
+  "author": "frye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frye/readme-generator/issues"
+  },
+  "homepage": "https://github.com/frye/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
