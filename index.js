@@ -4,7 +4,7 @@ const {writeMarkdown} = require('./modules/writeMarkdown');
 //Define the filename to write the markdown to.
 const readmeFile = './GeneratedREADME.md';
 
-// Using promises for inquirer and writeFileSync
+// Using promises for inquirer and writeMarkdown (which uses writeFileSync)
 const init = () => {
 	userInput()
 		.then((answers) => {
