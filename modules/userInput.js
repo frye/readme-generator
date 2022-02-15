@@ -14,6 +14,19 @@ const userInput = () => {
 			message: 'Give short description of the project:'
 		},
 		{
+			type: 'list',
+			name: 'license',
+			choices: [
+				'MIT',
+				'Mozilla',
+				'Apache',
+				'Eclipse',
+				'GPL v2',
+				'GPL v3'
+			],
+			message: 'Select the lincense for the project:'
+		},
+		{
 			type: 'input',
 			name: 'ghuser',
 			message: 'What is your GitHub handle?'
