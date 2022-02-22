@@ -81,6 +81,7 @@ ${answers.description}
 
 ${generateLicense(answers.license)}
 
+## Table of contents
 ${generateTOC(answers)}
 
 ${generateSection('Installation', answers.installSection, answers.installation)}
