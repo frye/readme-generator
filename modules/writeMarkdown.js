@@ -51,6 +51,7 @@ ${answer}
 	}
 }
 
+// Generate the final markdown to be written to the file.
 const generateMarkdown = (answers) =>
 	`# ${answers.title}
 
