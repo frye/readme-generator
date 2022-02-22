@@ -58,7 +58,7 @@ ${generateLicense(answers.license)}
 ## How to test
 
 ## More information:
-- Through Github: [@${answers.ghuser}](https://github.com/${answers.ghuser})
+- Through GitHub: [@${answers.ghuser}](https://github.com/${answers.ghuser})
 - Via Email: ${answers.email}
 	`;
 
