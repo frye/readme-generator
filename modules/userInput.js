@@ -90,7 +90,7 @@ const userInput = () => {
 					}
 				},
 				when(answers) {
-					return answers.contributionSection;
+					return answers.contributeSection;
 				}
 			},
 			{

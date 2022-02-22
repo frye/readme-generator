@@ -1,22 +1,28 @@
 # Test
 
 ## Description
-Description
+Test
+
 
 
 ## License
-[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)	
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)	
 	
 
-## Installation
-- Clone the repo
-- npm -i
+- [Description](#description)
+- [License](#license)
+- [How to use](#how-to-use)
+- [How to contribute](#how-to-contribute)
+- [More information](#more-information)
 
 
 
 ## How to use
-Execute 'node index.js' and answer the questions. 
+Use it
 
+
+## How to contribute
+Keep on giving and I'll accept the PRs
 
 
 

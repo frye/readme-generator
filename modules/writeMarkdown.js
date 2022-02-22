@@ -51,6 +51,27 @@ ${answer}
 	}
 }
 
+//function to generate TOC
+const generateTOC = (answers) => {
+	let tocArr = [];
+	tocArr.push('- [Description](#description)');
+	tocArr.push('- [License](#license)');
+	if (answers.installSection) {
+		tocArr.push('- [Installation](#installation)');
+	}
+	tocArr.push('- [How to use](#how-to-use)');
+	if (answers.contributeSection) {
+		tocArr.push('- [How to contribute](#how-to-contribute)');
+	}
+	if (answers.testing) {
+		tocArr.push('- [How to test](#how-to-test)');
+	}
+	tocArr.push('- [More information](#more-information)');
+
+	// join the array elements with newline and return the toc section
+	return tocArr.join('\n');
+}
+
 // Generate the final markdown to be written to the file.
 const generateMarkdown = (answers) =>
 	`# ${answers.title}
@@ -59,6 +80,8 @@ const generateMarkdown = (answers) =>
 ${answers.description}
 
 ${generateLicense(answers.license)}
+
+${generateTOC(answers)}
 
 ${generateSection('Installation', answers.installSection, answers.installation)}
 
