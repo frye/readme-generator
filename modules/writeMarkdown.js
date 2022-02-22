@@ -63,7 +63,7 @@ const generateTOC = (answers) => {
 	if (answers.contributeSection) {
 		tocArr.push('- [How to contribute](#how-to-contribute)');
 	}
-	if (answers.testing) {
+	if (answers.testingSection) {
 		tocArr.push('- [How to test](#how-to-test)');
 	}
 	tocArr.push('- [More information](#more-information)');
