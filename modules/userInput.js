@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 
+// Questions to be asked. Some are conditionally asked based on previous answers. Basic input validation.
 const userInput = () => {
 	return inquirer.prompt(
 		[

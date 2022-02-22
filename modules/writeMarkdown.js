@@ -41,6 +41,7 @@ ${licenseBadge}
 	`
 }
 
+// Function to generate section based on the answer if it should be included or not
 const generateSection = (title, section, answer) => {
 	if (section) {
 		return `## ${title}
