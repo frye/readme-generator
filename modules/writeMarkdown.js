@@ -1,4 +1,4 @@
-const {writeFileSync} = require('fs');
+const { writeFileSync } = require('fs');
 
 // Map the license to the relevant badge. This generates the whole license section
 // which is then inserted to the template string.
@@ -32,7 +32,7 @@ const generateLicense = (license) => {
 	]
 	let licenseBadge = '';
 	licArr.forEach(licname => {
-		if ( licname.name === license) {
+		if (licname.name === license) {
 			licenseBadge = licname.badge;
 		}
 	})
@@ -41,28 +41,38 @@ ${licenseBadge}
 	`
 }
 
-const generateMarkdown = (answers) => 
-`# ${answers.title}
+const generateSection = (title, section, answer) => {
+	if (section) {
+		return `## ${title}
+${answer}
+`} else {
+		return ``;
+	}
+}
+
+const generateMarkdown = (answers) =>
+	`# ${answers.title}
 
 ## Description
 ${answers.description}
 
 ${generateLicense(answers.license)}
 
-## Installation
+${generateSection('Installation', answers.installSection, answers.installation)}
 
 ## How to use
+${answers.usage}
 
-## How to contribute
+${generateSection('How to contribute', answers.contributeSection, answers.contribution)}
 
-## How to test
+${generateSection('How to test', answers.testingSection, answers.testing)}
 
 ## More information:
 - Through GitHub: [@${answers.ghuser}](https://github.com/${answers.ghuser})
 - Via Email: ${answers.email}
 	`;
 
-	
+
 const writeMarkdown = (fileName, answers) => {
 	return writeFileSync(fileName, generateMarkdown(answers));
 }
