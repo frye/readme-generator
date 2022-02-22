@@ -1,8 +1,8 @@
 // Load our modules.
-const {userInput} = require('./modules/userInput');
-const {writeMarkdown} = require('./modules/writeMarkdown');
+const {userInput} = require(`./modules/userInput`);
+const {writeMarkdown} = require(`./modules/writeMarkdown`);
 //Define the filename to write the markdown to.
-const readmeFile = './GeneratedREADME.md';
+const readmeFile = `./GeneratedREADME.md`;
 
 // Using promises for inquirer and writeMarkdown (which uses writeFileSync)
 const init = () => {
@@ -10,7 +10,7 @@ const init = () => {
 		.then((answers) => {
 			writeMarkdown(readmeFile, answers);
 		})
-		.then(() => console.log('Successfully created README.md'))
+		.then(() => console.log(`Successfully created README.md`))
 		.catch((err) => console.error(err));
 };
 
