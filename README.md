@@ -1,4 +1,4 @@
-# readme-generator# Readme Generator
+# Readme Generator
 
 ## Description
 This app allows programmatical generation of readme files based on user input
