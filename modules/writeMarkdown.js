@@ -3,7 +3,6 @@ const { writeFileSync } = require(`fs`);
 // Map the license to the relevant badge. This generates the whole license section
 // which is then inserted to the template string.
 const generateLicense = (license) => {
-	console.log(license);
 	const licArr = [
 		{
 			name: `MIT`,

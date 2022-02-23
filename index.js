@@ -10,7 +10,7 @@ const init = () => {
 		.then((answers) => {
 			writeMarkdown(readmeFile, answers);
 		})
-		.then(() => console.log(`Successfully created README.md`))
+		.then(() => console.log(`Successfully created GeneratedREADME.md`))
 		.catch((err) => console.error(err));
 };
 

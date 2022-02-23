@@ -1,10 +1,8 @@
 # Readme Generator
 
 ## Description
-This is a Javascript utility to generate README markdown
-files based on user input. Several questions will be asked 
-using the inquirer module, and then the README file is 
-generated using the answers. Some sections can be omitted.
+This app allows programmatical generation of readme files based on user input
+Some sections are optional and user can choose whether to include them or not.
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,14 +10,19 @@ generated using the answers. Some sections can be omitted.
 ## Table of contents
 - [Description](#description)
 - [License](#license)
+- [Installation](#installation)
 - [How to use](#how-to-use)
 - [More information](#more-information)
 
-
+## Installation
+- Clone the repository
+- Run 'npm i' to install dependencies
 
 ## How to use
-Make sure you have pulled in the dependencies using 'npm i'. 
-Then execute the application with 'node index.js'. 
+To use the application execute 'node index.js' in a terminal window. Below GIF
+shows the application in use.
+
+![Screen recording of the app in use](./assets/recording.gif)
 
 
 
