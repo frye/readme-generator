@@ -26,6 +26,8 @@ shows the application in use.
 
 ![Screen recording of the app in use](./assets/recording.gif)
 
+You can watch a better resolution video describing the usage in [youtube](https://youtu.be/2jLS9L65PpU).
+
 ## More information:
 - Through GitHub: [@frye](https://github.com/frye)
 - Via Email: psjcode@gmail.com
